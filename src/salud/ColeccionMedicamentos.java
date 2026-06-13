@@ -9,7 +9,7 @@ public class ColeccionMedicamentos implements Agregado {
         addMedicamento(new Medicamento("Panadol Antigripal", "1 tableta", "09:00 PM"));
     }
     public void addMedicamento(Medicamento medicamento) {
-        if (indice > medicamentos.length) {
+        if (indice < medicamentos.length) {
             medicamentos[indice] = medicamento;
             indice++;
         }
